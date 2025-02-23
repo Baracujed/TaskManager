@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Manager</title>
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js';
+    import { getAuth } from 'https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js';
+    import { getFirestore } from 'https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js';
+
+    // Инициализация Firebase (замените значения на свои из firebase_options.dart)
+    const firebaseConfig = {
+      apiKey: "AIzaSyAeO3ce9VEFxL046aBcdclQAAzEuRO0XFU",
+      authDomain: "taskmanager-a79f7.firebaseapp.com",
+      projectId: "taskmanager-a79f7",
+      storageBucket: "taskmanager-a79f7.appspot.com",
+      messagingSenderId: "your-messaging-sender-id",
+      appId: "1:348616930740:web:01f4a91a1133dbfe716ee1",
+      measurementId: "G-9W64CQBH08"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+  </script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LfQLuAqAAAAAK58EXtIuxLo3095N9GiGkT_4xwE"></script>
+
+
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Personal Task Manager.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="taskmanager">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>taskmanager</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
